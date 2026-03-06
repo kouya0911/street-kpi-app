@@ -1,0 +1,17 @@
+{
+    "hosting": {
+        "site": "street-hero-kpi-7aa88",
+        "public": "dist",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "rewrites": [
+            {
+                "source": "**",
+                "destination": "/index.html"
+            }
+        ]
+    }
+}

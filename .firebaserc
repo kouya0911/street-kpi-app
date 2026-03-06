@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "street-hero-kpi-7aa88"
+  },
+  "targets": {
+    "street-hero-kpi": {
+      "hosting": {
+        "main": [
+          "street-hero-kpi",
+          "street-hero-kpi-7aa88"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
