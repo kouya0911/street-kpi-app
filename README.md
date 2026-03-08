@@ -1,16 +1,28 @@
-# React + Vite
+営業KPI・現場サポートアプリ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ストリート営業の現場で「紙・LINE・ホワイトボード」に追われる無駄をなくすために開発した、現場直結型の管理アプリです。
 
-Currently, two official plugins are available:
+★開発の背景
+・紙の記録はもう限界: 紙は書くのが面倒で、すぐ失くすし、集計も手計算で時間がかかる。
+・情報の分散: ロケーションコードはLINE、メモは別のアプリ、KPIは紙……といちいち開くのがストレス。
+・夜の振り返りが苦痛: ホワイトボードに書き写す時間が無駄。もっと早く帰りたい。
+これらをすべて「1つの画面」で解決するために作りました。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+★現場で助かる機能
+・KPIを秒で記録: ボタンを叩くだけで、時間別の集計も移行率も勝手に計算。
+・営業ツールを1画面に凝縮: ロケーションコード、CSメモ、ポイント、スプレッドシートやドキュメントへのリンク。すべてボタン一つで即確認。
+・クイックメモ & ワンタッチ獲得記録: 忘れないうちにその場でメモ。申し込み時もワンタッチで獲得情報を残せます。
+・ホワイトボードいらずの振り返り: 
+  - 新人さんでも使いやすい「Good & More」形式のメモ機能。
+  - クイックメモの内容をボタン一つで振り返りに追加可能。
+  - 集計結果を写真（画像）として保存できるので、ホワイトボードに書く時間を大幅に短縮。
+・モチベーション管理: 日付、今日のテーマ、ゴールを一番目立つ場所に表示。
+・現場の環境に配慮: 
+  - 夜間活動でも眩しくない「ナイトモード」。
+  - ホーム画面に置いて「普通のアプリ」として爆速で起動。
+  - スクロール不要で、大事なボタンはすべて指が届く範囲に配置。
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+★技術と仕様
+・開発: Antigravityを活用し、現場の意見を即座に反映してビルド。
+・保存: データはローカルストレージに保存。
+・カレンダー検索: 過去のKPIや獲得情報もカレンダーから一発で探し出せます。
